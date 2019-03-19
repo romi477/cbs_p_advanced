@@ -16,4 +16,4 @@ json_data = json.dumps(data)
 print(json_data)
 
 with open('data/output.json', 'w') as f:
-    json.dump(data, f)
+    json.dump(data, f, indent=2)

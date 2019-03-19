@@ -14,7 +14,7 @@ class DateFormatEncoder(json.JSONEncoder):
                 'value': obj.strftime('%d/%m/%Y'),
                 '__date__': True
             }
-        return json.JSONEncoder.default(self, obj)
+        return super().default(self, obj)
 
 
 data = {
